@@ -1,0 +1,99 @@
+ul#framesort{
+	padding: 0 5px;
+}
+
+ul#framesort .frame-preview{
+	width: 100%;
+}
+
+ul#framesort iframe{
+	width: 100%;
+	height: 400px;
+}
+
+ul#framesort li{
+	list-style-type: none;
+	display: block;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	background-color: #eee;
+	margin: 5px 0;
+	padding: 10px;
+	/*width: 80%;*/
+	cursor: move;
+}
+
+ul#framesort li .wrapper{
+	display: flex;
+}
+
+ul#framesort li img{
+	/*float: left;*/
+	padding: 0 10px 0 0;
+}
+
+ul#framesort .frame-image{
+}
+
+ul#framesort .frame-info{
+}
+
+ul#framesort .frame-info h3{
+	margin-top: 0;
+}
+
+ul#framesort .frame-desc{
+	min-width: 70%;
+	background-color: white;
+	border:1px solid whitesmoke;
+	border-radius: 10px;
+	padding: 10px;
+	max-height: 300px;
+	overflow: hidden;
+}
+
+ul#framesort .frame-number span{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: lightgreen;
+	text-align: center;
+	/*color: white;*/
+	border-radius: 20px;
+	margin: 0px 10px 10px 0px;
+	line-height: 30px;
+}
+
+ul#framesort li:first-of-type .frame-number span{
+	background-color: white;
+	border: 1px solid darkorange;
+}
+
+ul#framesort li:last-of-type .frame-number span{
+	background-color: white;
+	border: 1px solid red;
+}
+
+ul#framesort .frame-buttons{
+	margin-left: 35px;
+}
+
+ul#framesort .frame-buttons .btn-frame-preview{
+	margin-left: 80px;
+}
+
+ul#framesort .frame-settings{
+	min-width: 200px;
+
+}
+
+ul#framesort .frame-settings li{
+	border: none;
+	padding: 0;
+	background: none;
+}
+
+.single-frame-preview iframe{
+	width: 100%;
+	height: 600px;
+}

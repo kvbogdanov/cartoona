@@ -1,0 +1,403 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {font-family: Nunito;}
+
+a {text-decoration: none; color: #3994ff;}
+body, html {height: 100%; min-height: 100%;}
+
+#cart-template
+{
+	height: 100%;
+	min-height: 100%;
+	display: flex;
+	overflow: hidden;
+	position: relative;
+}
+
+#cart-template video {position: absolute; left: 0px; top: 0px; bottom: 0px; right: 0px; min-width: 100%; min-height: 100%;}
+
+#cart-template > div {position: relative;	z-index: 1;}
+
+.last-frame {
+	display: none;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.share .close {position: absolute; font-weight: 800; color: #fff; right: 10px; top: 0px; font-size: 37px;}
+.share {
+    font-size: 16px;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    display: none;
+    background: #000;
+    z-index: 999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.money-info {
+	background: #fff;
+    color: #333;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 20px;
+    text-align: left;
+}
+
+.money-info a.btn {float: right;}
+.money-info a {font-size: 16px;}
+
+.replay {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+    line-height: 45px;
+    display:  contents;
+    margin-top: 20px;
+}
+
+.customize {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+    line-height: 45px;
+    display:  contents;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+h1 {font-size: 23px; text-align: left; padding: 10px 0px;}
+
+.left-image {
+	width: 50%;
+	text-align: center;
+	align-self: center;
+	position: relative;
+  height: 100%;
+  display: flex;
+  padding: 30px;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-direction: column;
+}
+.left-image .frames {align-self: center; height: 100%; width: 100%;}
+.left-image .frame {height: 100%;}
+
+.left-image img {max-width: 100%; max-height: 100%; box-sizing: border-box; cursor: pointer;}
+
+.right-text {width: 40%;
+    align-self: center;
+    padding: 30px;
+ }
+
+ #slider img, #slider {max-width: 100%; height: 100%; cursor: pointer; }
+
+ .images > div {background-position: 50% 50%!important; background-repeat: no-repeat!important;}
+
+ .middle-section {width:10%; align-self: center; font-size: 40px;}
+
+.frame {display: none; align-items: center; justify-content: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.frame img {object-fit: contain;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.frame:first-child {display: flex;}
+
+.likes a {background: #eee; padding: 10px; display: inline-block; text-align: center; margin-top: 30px;  font-weight: 600; font-family: Helvetica; color: #333;}
+.btn {background: #25bd1a; color: #fff; padding: 10px; display: inline-block; text-align: center; }
+
+footer {
+	border-top: 1px solid #eee;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+  flex-wrap: wrap;
+  background:#fff;
+}
+
+.cards {min-height: 100%; padding: 50px; box-sizing: border-box; display: flex; flex-wrap:wrap; align-items: start;}
+.card {min-width: 320px; min-height:240px; border: 1px solid #aaa; margin-right: 20px; text-align: center; vertical-align: middle; box-sizing: border-box; padding-bottom: 10px;}
+
+#logo {font-size: 40px; color: #333; font-weight: 800; margin-left: 20px;}
+
+nav {align-self: center;}
+nav a {margin: 0 30px 0px 0px;}
+
+.resp-sharing-button__link,
+.resp-sharing-button__icon {
+  display: inline-block
+}
+
+.resp-sharing-button__link {
+  text-decoration: none;
+  color: #fff;
+  margin: 0.5em
+}
+
+.resp-sharing-button {
+  border-radius: 5px;
+  transition: 25ms ease-out;
+  padding: 0.5em 0.75em;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif
+}
+
+.resp-sharing-button__icon svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+  vertical-align: top
+}
+
+.resp-sharing-button--small svg {
+  margin: 0;
+  vertical-align: middle
+}
+
+/* Non solid icons get a stroke */
+.resp-sharing-button__icon {
+  stroke: #fff;
+  fill: none
+}
+
+/* Solid icons get a fill */
+.resp-sharing-button__icon--solid,
+.resp-sharing-button__icon--solidcircle {
+  fill: #fff;
+  stroke: none
+}
+
+.resp-sharing-button--twitter {
+  background-color: #55acee
+}
+
+.resp-sharing-button--twitter:hover {
+  background-color: #2795e9
+}
+
+.resp-sharing-button--pinterest {
+  background-color: #bd081c
+}
+
+.resp-sharing-button--pinterest:hover {
+  background-color: #8c0615
+}
+
+.resp-sharing-button--facebook {
+  background-color: #3b5998
+}
+
+.resp-sharing-button--facebook:hover {
+  background-color: #2d4373
+}
+
+.resp-sharing-button--tumblr {
+  background-color: #35465C
+}
+
+.resp-sharing-button--tumblr:hover {
+  background-color: #222d3c
+}
+
+.resp-sharing-button--reddit {
+  background-color: #5f99cf
+}
+
+.resp-sharing-button--reddit:hover {
+  background-color: #3a80c1
+}
+
+.resp-sharing-button--google {
+  background-color: #dd4b39
+}
+
+.resp-sharing-button--google:hover {
+  background-color: #c23321
+}
+
+.resp-sharing-button--linkedin {
+  background-color: #0077b5
+}
+
+.resp-sharing-button--linkedin:hover {
+  background-color: #046293
+}
+
+.resp-sharing-button--email {
+  background-color: #777
+}
+
+.resp-sharing-button--email:hover {
+  background-color: #5e5e5e
+}
+
+.resp-sharing-button--xing {
+  background-color: #1a7576
+}
+
+.resp-sharing-button--xing:hover {
+  background-color: #114c4c
+}
+
+.resp-sharing-button--whatsapp {
+  background-color: #25D366
+}
+
+.resp-sharing-button--whatsapp:hover {
+  background-color: #1da851
+}
+
+.resp-sharing-button--hackernews {
+background-color: #FF6600
+}
+.resp-sharing-button--hackernews:hover, .resp-sharing-button--hackernews:focus {   background-color: #FB6200 }
+
+.resp-sharing-button--vk {
+  background-color: #507299
+}
+
+.resp-sharing-button--vk:hover {
+  background-color: #43648c
+}
+
+.resp-sharing-button--facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.resp-sharing-button--facebook:hover,
+.resp-sharing-button--facebook:active {
+  background-color: #2d4373;
+  border-color: #2d4373;
+}
+
+.resp-sharing-button--twitter {
+  background-color: #55acee;
+  border-color: #55acee;
+}
+
+.resp-sharing-button--twitter:hover,
+.resp-sharing-button--twitter:active {
+  background-color: #2795e9;
+  border-color: #2795e9;
+}
+
+.resp-sharing-button--vk {
+  background-color: #507299;
+  border-color: #507299;
+}
+
+.resp-sharing-button--vk:hover
+.resp-sharing-button--vk:active {
+  background-color: #43648c;
+  border-color: #43648c;
+}
+
+.resp-sharing-button--telegram {
+  background-color: #54A9EB;
+}
+
+.resp-sharing-button--telegram:hover {
+  background-color: #4B97D1;}
+
+.share-footer{display: block; margin: -1px 0px 0px 0px; width:100%; text-align: center;}
+.share-footer a{margin: 0px; display: inline-block; width: 20%;}
+.share-footer a div{border-radius: 0px;}
+.share-footer svg{margin: 0;}
+
+#help-click {position: absolute;
+    left: calc(50% - 100px);
+    top: 70%;
+    background: #ffffff;
+    color: #333;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    border-radius: 6px;
+  }
+#help-click:before {
+  content:'';
+  display: block;
+  position: absolute; top: -10px; left: 45%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.share-footer.uplift{margin-top: -35px; z-index: 999;}
+
+#buttons {position: absolute; right: 30px; top:30px; z-index: 10;}
+#buttons a {display: block; background: rgba(0,0,0,0.4); border-radius:50px; width: 40px; height: 40px; background-position: 50% 50%; background-repeat: no-repeat; background-size:20px; margin: 0px;}
+#buttons a.sound {display: none;}
+#buttons a.sound.active {background-image: url(/svg/speak_on.svg); background-size:22px; background-position: 50% 50%;}
+#buttons a.sound {background-image: url(/svg/speak_off.svg);  margin-bottom: 10px; background-size:20px; background-position: 45% 50%;} 
+#buttons a.share-button {background-image: url(/svg/share.svg); background-position: 50% 40%; background-size: 18px;}
+
+@media screen and (max-width: 1000px)
+{
+	.middle-section {display: none;}
+  h1 {padding: 0px;}
+  .left-image {padding: 20px 10px;}
+
+  #buttons {right: 10px; top:15px;}
+}
+
+@media screen and (max-width: 600px)
+{
+	#logo {font-size: 25px; margin-bottom: 15px;}
+
+  nav a {margin-right: 15px; display: inline-block;}
+
+	.share, .likes {text-align: center;}
+
+  #cart-template {height: auto;}
+	#cart-template, .cards {flex-direction: column; padding: 0px;}
+	.card {margin-bottom: 10px; width: 100%;}
+  .left-image {padding: 0px;}
+	.left-image, .right-text, .middle-section {width: 100%; box-sizing: border-box;}
+
+  .right-text {margin-top: 20px;}
+  .right-text .frame {text-align: center;}
+
+  #header {padding: 10px; box-sizing: border-box;}
+
+  #buttons {top: initial; bottom: 15px;}
+
+	.right-text {padding: 10px;}
+
+  /*eft-image {min-height: 500px;}*/
+}
